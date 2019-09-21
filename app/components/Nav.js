@@ -3,13 +3,13 @@ import { ThemeConsumer } from '../contexts/theme'
 import { NavLink } from 'react-router-dom'
 
 const activeStyle = {
-  color: 'rgb(187, 46, 31)'
+  color: 'rgb(187, 46, 31)',
 }
 
-export default function Nav () {
+export default function Nav({ toggleTheme }) {
   return (
     <ThemeConsumer>
-      {({ theme, toggleTheme }) => (
+      {theme => (
         <nav className='row space-between'>
           <ul className='row nav'>
             <li>
@@ -18,7 +18,7 @@ export default function Nav () {
                 exact
                 activeStyle={activeStyle}
                 className='nav-link'>
-                  Popular
+                Popular
               </NavLink>
             </li>
             <li>
@@ -26,15 +26,14 @@ export default function Nav () {
                 to='/battle'
                 activeStyle={activeStyle}
                 className='nav-link'>
-                  Battle
+                Battle
               </NavLink>
             </li>
           </ul>
           <button
-            style={{fontSize: 30}}
+            style={{ fontSize: 30 }}
             className='btn-clear'
-            onClick={toggleTheme}
-          >
+            onClick={toggleTheme}>
             {theme === 'light' ? '🔦' : '💡'}
           </button>
         </nav>
