@@ -1,12 +1,3 @@
-
-<h3 align="center">React Hooks Course Project - <a href="https://tm.dev/react-course-project/">Github Battle App</a></h3>
-
-### Info
-
-This is the repository for TylerMcGinnis.com's "React Hooks" course project. 
-
-For more information on the course, visit __[tm.dev/courses/react-hooks](https://tm.dev/courses/react-hooks/)__.
-
 ### Project
 
 This project is a "Github Battle" app. You'll be able to see the most popular repos for a variety of languages as well as battle two Github users to see who has the better profile.
